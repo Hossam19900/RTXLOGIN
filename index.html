@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MetaNano</title>
+	<link rel="stylesheet" href="login.css">
+</head>
+<body>
+	<div id="progressbar"></div>
+    <div id="scrollPath"></div>
+	
+	<header>
+        <img src="https://www.nvidia.com/content/dam/pre-production/en-us/geforce/geforce-game-ready-refresh-2018/GEFORCE-Logo.svg">        
+    </header>
+	
+	<dev class="main">
+		<div class="container">
+			<h1 class="label">Login</h1>
+			<form class="login_form" action="3090page.html" method="post" name="form" onsubmit="return login()">
+				<div class="font">Email or Phone</div>
+				<input autocomplete="off" type="text" name="email" id="email">
+				<div id="email_error">Please Enter Valid Email Adaress</div>
+				<div class="font font2">Password</div>
+				<input type="password" name="password" id="password">
+				<div id="pass_error">Please Enter Valid Password</div>
+				<button type="submit">Login</button>
+			</form>
+		</div>
+	</dev>	
+
+</body>
+
+<script src="validate.js"></script>
+
+</html>
