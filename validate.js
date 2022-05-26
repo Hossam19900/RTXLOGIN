@@ -10,18 +10,18 @@ function login()
 		    email.focus();
             return false;
         }
-        else if(pwd=='')
-        {
-            password.style.border = "1px solid red";
-		    pass_error.style.display = "block";
-		    password.focus();
-            return false;
-        }
         else if(!filter.test(uname))
         {
             email.style.border = "1px solid red";
 		    email_error.style.display = "block";
 		    email.focus();
+            return false;
+        }
+        else if(pwd=='')
+        {
+            password.style.border = "1px solid red";
+		    pass_error.style.display = "block";
+		    password.focus();
             return false;
         }
         else if(pwd.length < 8)
